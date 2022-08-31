@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var vm = OrdersViewModel()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            ForEach(vm.orders) { user in
+                Text("\(user.quantity)")
+            }
+        }
     }
 }
 

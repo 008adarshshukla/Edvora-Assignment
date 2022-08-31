@@ -6,11 +6,20 @@
 //
 
 import Foundation
+import Combine
 
-struct OrdersModel {
-    var order_id: Int
-    var product_id: Int
-    var quantity: Int
-    var user_id: Int
-    var order_date: String
+struct OrdersModel: Identifiable, Codable {
+    let id: Int
+    let productID: Int
+    let quantity: Int
+    let userID: Int
+    let orderDate: String
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "order_id"
+        case productID = "product_id"
+        case quantity = "quantity"
+        case userID = "user_id"
+        case orderDate = "order_date"
+    }
 }

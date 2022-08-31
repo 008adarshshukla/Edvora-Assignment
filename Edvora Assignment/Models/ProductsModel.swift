@@ -6,10 +6,18 @@
 //
 
 import Foundation
+import Combine
 
-struct ProductsModel {
-    var product_id: Int
-    var name: String
-    var stock: Int
-    var selling_price: Int
+struct ProductsModel: Identifiable, Codable {
+    let id: Int
+    let name: String
+    let stock: Int
+    let sellingPrice: Int
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "product_id"
+        case name = "name"
+        case stock = "stock"
+        case sellingPrice = "selling_price"
+    }
 }
