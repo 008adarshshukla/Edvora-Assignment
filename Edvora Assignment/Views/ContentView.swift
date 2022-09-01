@@ -12,6 +12,12 @@ struct ContentView: View {
     @StateObject private var vm = UsersViewModel()
     @State var selectedTab: Int = 0
     
+    init() {
+        UITabBar.appearance().barTintColor = .white
+        UITabBar.appearance().backgroundColor = .white
+        
+       }
+    
     var body: some View {
         VStack {
             TabView(selection: $selectedTab) {
@@ -39,6 +45,7 @@ struct ContentView: View {
         }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
