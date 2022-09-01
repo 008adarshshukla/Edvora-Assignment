@@ -6,7 +6,12 @@
 //
 
 import Foundation
-struct UsersModel {
-    var user_id: Int
+struct UsersModel: Identifiable, Codable {
+    var id: Int
     var name: String
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "user_id"
+        case name = "name"
+    }
 }

@@ -48,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02A3D67828C143F200EE6533 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02F7AA9D28BFCAAC0030F0D1 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		02F7AA8F28BFCAAC0030F0D1 = {
 			isa = PBXGroup;
 			children = (
@@ -67,13 +75,12 @@
 		02F7AA9A28BFCAAC0030F0D1 /* Edvora Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				02F7AA9B28BFCAAC0030F0D1 /* Edvora_AssignmentApp.swift */,
 				02F7AABB28BFE14B0030F0D1 /* Constants */,
 				02F7AAB628BFDEC80030F0D1 /* Managers */,
-				02F7AAAB28BFD4D00030F0D1 /* Views */,
 				02F7AAAA28BFD4C10030F0D1 /* ViewModels */,
+				02A3D67828C143F200EE6533 /* Views */,
 				02F7AAA928BFD4B80030F0D1 /* Models */,
-				02F7AA9B28BFCAAC0030F0D1 /* Edvora_AssignmentApp.swift */,
-				02F7AA9D28BFCAAC0030F0D1 /* ContentView.swift */,
 				02F7AA9F28BFCAAD0030F0D1 /* Assets.xcassets */,
 				02F7AAA128BFCAAD0030F0D1 /* Preview Content */,
 			);
@@ -106,13 +113,6 @@
 				02F7AAC028BFE7300030F0D1 /* OrdersViewModel.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		02F7AAAB28BFD4D00030F0D1 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		02F7AAB628BFDEC80030F0D1 /* Managers */ = {
