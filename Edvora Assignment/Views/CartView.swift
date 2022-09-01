@@ -8,8 +8,27 @@
 import SwiftUI
 
 struct CartView: View {
+    
+    @StateObject private var productsViewModel = ProductsViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                Text("Products")
+                    .font(.title)
+                    .fontWeight(.bold)
+                
+                Spacer()
+            }
+            .padding()
+            
+            List {
+                ForEach(productsViewModel.products) { product in
+                    ListRowView(product: product)
+                }
+            }
+            .listStyle(.plain)
+        }
     }
 }
 

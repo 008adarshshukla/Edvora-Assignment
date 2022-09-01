@@ -11,6 +11,7 @@
 		02A3D67E28C14B1D00EE6533 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A3D67D28C14B1D00EE6533 /* ProfileView.swift */; };
 		02A3D68028C14DF900EE6533 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A3D67F28C14DF900EE6533 /* CartView.swift */; };
 		02A3D68228C1579700EE6533 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A3D68128C1579700EE6533 /* PhotoPicker.swift */; };
+		02A3D68428C170AB00EE6533 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A3D68328C170AB00EE6533 /* ListRowView.swift */; };
 		02F7AA9C28BFCAAC0030F0D1 /* Edvora_AssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F7AA9B28BFCAAC0030F0D1 /* Edvora_AssignmentApp.swift */; };
 		02F7AA9E28BFCAAC0030F0D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F7AA9D28BFCAAC0030F0D1 /* ContentView.swift */; };
 		02F7AAA028BFCAAD0030F0D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F7AA9F28BFCAAD0030F0D1 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		02A3D67D28C14B1D00EE6533 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		02A3D67F28C14DF900EE6533 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		02A3D68128C1579700EE6533 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		02A3D68328C170AB00EE6533 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		02F7AA9828BFCAAC0030F0D1 /* Edvora Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Edvora Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F7AA9B28BFCAAC0030F0D1 /* Edvora_AssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edvora_AssignmentApp.swift; sourceTree = "<group>"; };
 		02F7AA9D28BFCAAC0030F0D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				02A3D67F28C14DF900EE6533 /* CartView.swift */,
 				02A3D67D28C14B1D00EE6533 /* ProfileView.swift */,
 				02A3D68128C1579700EE6533 /* PhotoPicker.swift */,
+				02A3D68328C170AB00EE6533 /* ListRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			files = (
 				02A3D68228C1579700EE6533 /* PhotoPicker.swift in Sources */,
 				02F7AABF28BFE71E0030F0D1 /* ProductsViewModel.swift in Sources */,
+				02A3D68428C170AB00EE6533 /* ListRowView.swift in Sources */,
 				02A3D67E28C14B1D00EE6533 /* ProfileView.swift in Sources */,
 				02A3D68028C14DF900EE6533 /* CartView.swift in Sources */,
 				02F7AAB528BFD74F0030F0D1 /* OrdersModel.swift in Sources */,
