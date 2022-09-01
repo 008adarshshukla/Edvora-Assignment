@@ -8,11 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var vm = OrdersViewModel()
+    
+    @StateObject private var vm = UsersViewModel()
+    @State var selectedTab: Int = 0
+    
     var body: some View {
         VStack {
-            ForEach(vm.orders) { user in
-                Text("\(user.quantity)")
+            TabView(selection: $selectedTab) {
+                CustomerView()
+                    .tabItem {
+                        Image(systemName: "person.3")
+                        Text("Customer")
+                    }
+                    .tag(0)
+                
+                CartView()
+                    .tabItem {
+                        Image(systemName: "bag.fill")
+                        Text("Cart")
+                    }
+                    .tag(1)
+                
+                ProfileView()
+                    .tabItem {
+                        Image(systemName: "person.fill")
+                        Text("Profile")
+                    }
+                    .tag(3)
             }
         }
     }
