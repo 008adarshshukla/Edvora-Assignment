@@ -65,7 +65,6 @@
 				02A3D67928C14AF800EE6533 /* CustomerView.swift */,
 				02A3D67F28C14DF900EE6533 /* CartView.swift */,
 				02A3D67D28C14B1D00EE6533 /* ProfileView.swift */,
-				02A3D68128C1579700EE6533 /* PhotoPicker.swift */,
 				02A3D68328C170AB00EE6533 /* ListRowView.swift */,
 			);
 			path = Views;
@@ -134,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				02F7AAB728BFDEE70030F0D1 /* Networking Manager.swift */,
+				02A3D68128C1579700EE6533 /* PhotoPicker.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";

@@ -16,7 +16,7 @@ struct ContentView: View {
         UITabBar.appearance().barTintColor = .white
         UITabBar.appearance().backgroundColor = .white
         
-       }
+    }
     
     var body: some View {
         VStack {

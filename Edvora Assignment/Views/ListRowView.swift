@@ -15,6 +15,7 @@ struct ListRowView: View {
                 Text("\(product.id)")
                     .foregroundColor(.gray)
             }
+            .padding(.horizontal, 6)
             VStack(alignment: .leading) {
                 Text(product.name)
                     .font(.title2)
@@ -29,8 +30,15 @@ struct ListRowView: View {
                 Text("Price : Rs \(product.sellingPrice)")
                     .font(.body)
                     .bold()
+                    .padding(.horizontal, 6)
+                
             }
         }
+        .background(
+            RoundedRectangle(cornerRadius: 10)
+                .foregroundColor(.white)
+                .shadow(color: .black.opacity(0.3), radius: 3, x: 0, y: 0)
+        )
     }
 }
 

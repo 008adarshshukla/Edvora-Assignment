@@ -10,6 +10,7 @@ import SwiftUI
 struct CartView: View {
     
     @StateObject private var productsViewModel = ProductsViewModel()
+    @State private var searchText: String = ""
     
     var body: some View {
         VStack {
@@ -19,12 +20,23 @@ struct CartView: View {
                     .fontWeight(.bold)
                 
                 Spacer()
+                Image(systemName: "plus")
+                    .font(.title)
+                    .padding(.horizontal)
+                
             }
             .padding()
+            
+            TextField("Search product", text: $searchText)
+                .font(.headline)
+                .padding()
+                .background(Color.gray.opacity(0.3).cornerRadius(20))
+                .padding()
             
             List {
                 ForEach(productsViewModel.products) { product in
                     ListRowView(product: product)
+                        .listRowSeparator(.hidden)
                 }
             }
             .listStyle(.plain)
